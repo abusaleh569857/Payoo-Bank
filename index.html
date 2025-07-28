@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo-Bank</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="bg-gray-100">
+      <div class="flex justify-center items-center h-screen">
+        <div>
+          <div class="flex justify-center relative mb-4">
+            <img src="assets/bg.png" alt="Background Image" class="" />
+            <img
+              src="assets/Group.png"
+              alt="Logo Image"
+              class="absolute top-8"
+            />
+          </div>
+          <div class="flex flex-col justify-center items-center w-[380px]">
+            <div
+              class="flex flex-col w-full p-5 gap-3 bg-white rounded-lg shadow-md border border-gray-200"
+            >
+              <label for="" class="text-sm font-medium text-gray-700"
+                >Mobile Number</label
+              >
+              <input
+                type="text"
+                name=""
+                id="phn-num"
+                placeholder="Enter Your Number"
+                class="pl-2 rounded-md h-10 border-2 border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              />
+              <label for="" class="text-sm font-medium text-gray-700"
+                >4 Digit Pin</label
+              >
+              <input
+                type="text"
+                name=""
+                id="digit"
+                placeholder="Enter Your 4 Digit Pin"
+                class="pl-2 rounded-md h-10 border-2 border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              />
+              <button
+                type="submit"
+                id="login-btn"
+                class="bg-blue-700 rounded-xl py-3 text-white font-semibold mt-2 hover:bg-blue-800 transition"
+              >
+                Login Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/home.js"></script>
+  </body>
+</html>
