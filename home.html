@@ -34,7 +34,7 @@
       <div class="divider"></div>
       <div class="flex justify-between px-96">
         <div
-          class="flex flex-col justify-center items-center gap-1 border-2 border-gray-300 rounded-xl py-3 px-5 shadow-md"
+          class="flex flex-col justify-center items-center gap-1 bg-blue-50 border-2 border-blue-600 rounded-xl py-3 px-5 shadow-md"
         >
           <img src="assets/wallet1.png" alt="" />
           <p>Add Money</p>
@@ -43,7 +43,7 @@
           class="flex flex-col justify-center items-center gap-1 border-2 border-gray-300 rounded-xl py-3 px-8 shadow-md"
         >
           <img src="assets/send1.png" alt="" />
-          <p>Cashout</p>
+          <p id="cash-out-btn">Cashout</p>
         </div>
         <div
           class="flex flex-col justify-center items-center gap-1 border-2 border-gray-300 rounded-xl py-3 px-5 shadow-md"
@@ -54,7 +54,7 @@
       </div>
       <div class="flex justify-center items-center mt-3">
         <div
-          class="w-[520px] flex flex-col gap-3 bg-gray-100 border border-gray-200 rounded-xl p-5"
+          class="w-[520px] flex flex-col gap-3 bg-gray-100 border-2 border-gray-200 rounded-xl p-5"
         >
           <p class="text-center text-3xl font-bold text-black py-3">
             Add Money
@@ -103,6 +103,41 @@
             id="add-money"
           >
             Add Money
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-center items-center hidden" id="cash-out-form">
+        <div
+          class="w-[520px] flex flex-col gap-3 p-5 rounded-xl bg-gray-100 border border-gray-200"
+        >
+          <p class="text-center text-3xl font-bold text-black">Cash Out</p>
+          <label for="" class="text-sm font-medium text-gray-700"
+            >Agent Number</label
+          >
+          <input
+            type="text"
+            placeholder="Input Your Agent Number for Cashout"
+            class="pl-2 h-10 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-700"
+          />
+          <label for="" class="text-sm font-medium text-gray-700">Amount</label>
+          <input
+            type="text"
+            placeholder="Enter Amount to Cashout"
+            class="pl-2 h-10 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-600"
+          />
+          <label for="" class="text-sm font-medium text-gray-700"
+            >Pin Number</label
+          >
+          <input
+            type="text"
+            placeholder="Enter Your Pin Number"
+            class="pl-2 h-10 rounded border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-700"
+          />
+          <button
+            type="submit"
+            class="text-white font-medium mt-2 bg-blue-600 py-3 rounded-xl hover:bg-blue-700"
+          >
+            Cashout
           </button>
         </div>
       </div>
