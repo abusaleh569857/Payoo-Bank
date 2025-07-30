@@ -17,7 +17,7 @@
         <div class="flex p-3">
           <img src="assets/Group.png" alt="" />
           <div class="flex flex-col gap-2 py-2">
-            <p class="text-2xl text-bold text-black">$45000</p>
+            <p class="text-2xl text-bold text-black" id="main-balance">45000</p>
             <p class="text-xl text-bold text-gray-500">Available Balance</p>
           </div>
         </div>
@@ -25,7 +25,7 @@
           <button
             type="submit"
             id="logout-btn"
-            class="bg-blue-700 py-3 px-5 mt-7 rounded-xl text-white hover:bg-blue-800"
+            class="bg-blue-600 py-3 px-5 mt-7 rounded-xl text-white hover:bg-blue-700"
           >
             Logout
           </button>
@@ -34,25 +34,81 @@
       <div class="divider"></div>
       <div class="flex justify-between px-96">
         <div
-          class="flex flex-col justify-center items-center gap-1 border-2 border-gray-300 rounded-xl py-3 px-5"
+          class="flex flex-col justify-center items-center gap-1 border-2 border-gray-300 rounded-xl py-3 px-5 shadow-md"
         >
           <img src="assets/wallet1.png" alt="" />
           <p>Add Money</p>
         </div>
         <div
-          class="flex flex-col justify-center items-center gap-1 border-2 border-gray-300 rounded-xl py-3 px-8"
+          class="flex flex-col justify-center items-center gap-1 border-2 border-gray-300 rounded-xl py-3 px-8 shadow-md"
         >
           <img src="assets/send1.png" alt="" />
           <p>Cashout</p>
         </div>
         <div
-          class="flex flex-col justify-center items-center gap-1 border-2 border-gray-300 rounded-xl py-3 px-5"
+          class="flex flex-col justify-center items-center gap-1 border-2 border-gray-300 rounded-xl py-3 px-5 shadow-md"
         >
           <img src="assets/money1.png" alt="" />
           <p>Transaction</p>
         </div>
       </div>
+      <div class="flex justify-center items-center mt-3">
+        <div
+          class="w-[520px] flex flex-col gap-3 bg-gray-100 border border-gray-200 rounded-xl p-5"
+        >
+          <p class="text-center text-3xl font-bold text-black py-3">
+            Add Money
+          </p>
+          <label for="" class="text-sm font-md text-gray-700"
+            >Select Your Bank</label
+          >
+          <select
+            name=""
+            id="select-bank"
+            class="pl-2 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+          >
+            <option value="" disabled selected>Select Your Bank</option>
+            <option value="Brac Bank">Brac Bank</option>
+            <option value="DBBL Bank">DBBL Bank</option>
+            <option value="IFIC Bank">IFIC Bank</option>
+          </select>
+          <label for="" class="text-sm font-md text-gray-700"
+            >Bank Account Number</label
+          >
+          <input
+            type="text"
+            id="account-num"
+            placeholder="Enter 11 digit Account Number"
+            class="pl-2 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+          <label for="" class="text-sm font-md text-gray-700"
+            >Amount To Add</label
+          >
+          <input
+            type="text"
+            name=""
+            id="amount-add"
+            placeholder="Enter Amount To Add"
+            class="pl-2 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+          <label for="" class="text-sm font-md text-gray-700">Pin Number</label>
+          <input
+            type="text"
+            id="pin-num"
+            placeholder="Enter Your Pin Number"
+            class="pl-2 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+          <button
+            class="text-white rounded-xl px-5 py-2 bg-blue-600 hover:bg-blue-700"
+            id="add-money"
+          >
+            Add Money
+          </button>
+        </div>
+      </div>
     </main>
+    <script src="js/commonFunction.js"></script>
     <script src="js/logout.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
